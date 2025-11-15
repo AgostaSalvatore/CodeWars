@@ -18,3 +18,9 @@ function duck_duck_goose($players, $goose)
 }
 
 echo duck_duck_goose($players, 2);
+
+// function duck_duck_goose($players, $goose)
+// {
+//     $index = ($goose - 1) % count($players);
+//     return $players[$index]['name'];
+// }
