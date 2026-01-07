@@ -3,13 +3,12 @@
 function solution($str, $ending)
 {
     $lenEnding = strlen($ending);
-    $lenStr    = substr($str, -$lenEnding);
 
-    if ($lenEnding == $lenStr) {
+    if ($lenEnding == 0) {
         return true;
-    } else {
-        return false;
     }
+
+    $substring = substr($str, -$lenEnding);
+
+    return $substring == $ending;
 }
-
-
